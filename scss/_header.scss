@@ -1,0 +1,215 @@
+.header{
+   // background-color: rgb(0, 0, 0);
+   -webkit-user-select: none;
+   width: 100%;
+   height: 80px;
+   position: fixed;
+   z-index: 100;
+   .header__wrap{
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      width: 100%;
+      .header__logo a img{
+         width: 139px;
+         margin-top: 10px;
+         transition-duration: 0.3s;
+      }
+      .header__logo a img:hover{
+         transform: scale(1.06);
+         transition-duration: 0.5s;
+      }
+      .header__navbar {
+         margin-left: auto;
+         @media screen and (max-width: 1400px){
+            display: none;
+         }
+         .header__navbar-list{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            .header__navbar-item{
+               display: flex;
+               justify-content: center;
+               margin-left: 30px;
+               a{
+                  display: flex;
+                  justify-content: center;
+                  text-decoration: none;
+                  color: #FFFFFF;
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 16px;
+                  line-height: 22px;
+                  letter-spacing: 1.5px;
+                  text-transform: uppercase;
+                  transition: 0.3s;
+                  padding-bottom: 5px;
+                  padding-top: 8px;
+                  border-bottom: 3px solid rgba(255, 255, 255, 0);
+               }
+               a:hover{
+                  border-bottom: 3px solid white;
+                  transition: 0.9s;
+               }               
+               .header__menu--active{
+                  border-bottom: 3px solid white;
+               } 
+            }
+
+         }
+      } 
+   
+      .header__messedgeses{
+         display: grid;
+         grid-template-columns: 48px 48px 48px;
+         justify-content: center;
+         align-items: center;
+         margin-left: 50px;
+         margin-right: 7px;
+         @media screen and (max-width: 1400px){
+            display: none;
+         }
+         a {
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            img{
+               width: 30px;
+               height: 30px;
+               transition-duration: 0.2s;
+            }
+            img:hover{
+               transform: scale(1.2);
+               transition-duration: 0.5s;
+            }
+         }
+      }
+      .menu-icon {
+         display: none;
+         width: 30px;
+         height: 30px;
+         z-index: 95;
+         cursor: pointer;
+         @media screen and (max-width: 1400px){
+            display: flex;
+            align-items: center;
+         }
+      }
+         
+         .menu-icon-line {
+           position: relative;
+           width: 30px;
+           height: 5px;
+           background-color: #fff;
+         }
+         
+         .menu-icon-line::before {
+           position: absolute;
+           left: 0;
+           top: -10px;
+           content: '';
+           width: 30px;
+           height: 5px;
+           background-color: #fff;
+           transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+         }
+         .menu-icon-line::after {
+           position: absolute;
+           left: 0;
+           top: 10px;
+           content: '';
+           width: 30px;
+           height: 5px;
+           background-color: #fff;
+           transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+         }
+         
+         .menu-icon.menu-icon-active .menu-icon-line{
+           background-color: transparent;
+         }
+         
+         .menu-icon.menu-icon-active .menu-icon-line::before{
+           transform: rotate(45deg);
+           top: 0;
+           transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+         }
+         
+         .menu-icon.menu-icon-active .menu-icon-line::after{
+            transform: rotate(-45deg);
+            top: 0;
+            transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+         }
+      .mobile-nav{
+         display: block;
+         position: absolute;
+         right: -320px;
+         top: 0;
+         height: 100vh;
+         width: 320px;
+         background-color: rgba(0, 0, 0, 0.897);
+         z-index: 90;
+         overflow: auto;
+         transition-duration: 0.5s;
+         .mobile-nav__title{
+            margin-left: 50px;
+            margin-top: 120px;
+            margin-bottom: 70px;
+            color: white;
+            font-size: 28px;
+            font-family: Montserrat;
+            letter-spacing: 2px;
+            font-weight: 800;
+         }
+         .mobile-nav__list{
+            padding-left: 0;
+            margin-left: 50px;
+            .mobile-nav__item {
+               list-style-type: none;
+               margin-bottom: 20px;
+               a{
+                  color: white;
+                  text-decoration: none;
+                  font-family: Montserrat;
+                  letter-spacing: 1.5px;
+                  font-size: 18px;
+                  transition-duration: 0.5s;
+               }
+               a:hover{
+                  color: rgb(247, 210, 3);
+                  letter-spacing: 3px;
+                  transition-duration: 0.5s;
+               }
+            }
+         }
+      }
+      .mobile-nav--active{
+         transform: translateX(-100%);
+         transition-duration: 0.5s;
+      }
+      .mobile-nav__messedgeses {
+         margin-left: 50px;
+         margin-top: 150px;
+         margin-bottom: 20px;
+         z-index: 1;
+         @media screen and (max-width: 460px){
+            margin-top: 80px;
+         }
+         a{
+            margin-right: 16px;
+         }
+         img{
+            width: 32px;
+            height: 32px;
+            transition-duration: 0.2s;
+         }
+         img:hover{
+            transform: scale(1.2);
+            transition-duration: 0.5s;
+         }
+      }      
+   }
+}

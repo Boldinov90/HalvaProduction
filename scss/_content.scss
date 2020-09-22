@@ -1,0 +1,77 @@
+.home-content{
+   margin: 0;
+   height: 100vh;
+   display: grid;
+   grid-template-columns: 1fr;
+   align-items: center;
+   -webkit-user-select: none;
+   .content-wrapper{
+      margin-top: 80px;
+      display: grid;
+      // justify-content: center;
+      .title-text{
+         font-family: Montserrat;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 64px;
+         color: #FFFFFF;
+         // @media screen and (max-width: 640px){
+         //    font-size: 44px;
+         // }
+         // @media screen and (max-width: 460px){
+         //    font-size: 38px;
+         // }
+         // @media screen and (max-width: 380px){
+         //    font-size: 30px;
+         //    text-align: center;
+         //    span{
+         //       font-size: 24px;
+         //    }
+         // }
+      }
+      .sub-title-text{
+         font-family: Montserrat;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 22px;
+         color: #FFFFFF;
+         margin-top: 45px;
+         // @media screen and (max-width: 640px){
+         //    font-size: 20px;
+         // }
+         // @media screen and (max-width: 380px){
+         //    font-size: 14px;
+         //    text-align: center;
+
+         // }
+      }
+      .button-callback{
+         cursor: pointer;
+         width: 230px;
+         height: 40px;
+         border: 2px solid #FFFFFF;
+         box-sizing: border-box;
+         border-radius: 50px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 45px;
+         transition-duration: 0.2s;
+         color: #FFFFFF;
+         text-decoration: none;
+         font-family: Montserrat;
+         font-style: normal;
+         font-weight: 500;
+         font-size: 18px;
+      
+         // @media screen and (max-width: 380px){
+         //    justify-self: center;
+         // }
+         &:hover{
+            transform: scale(1.06);
+            transition-duration: 0.5s;
+         }
+
+      }
+   }
+}

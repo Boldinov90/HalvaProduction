@@ -1,0 +1,98 @@
+.form{
+    
+    .form__overlay{
+        z-index: 1000;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.644);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        form{
+            padding-top: 40px;
+            width: 450px;
+            height: 536px;
+            border-radius: 8px;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .form__body-title{
+                -webkit-user-select: none;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+                text-align: center;
+                text-transform: uppercase;
+                height: 66px;
+            }
+            label{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 130%;
+                color: #8D8D8D;
+                margin-top: 24px;
+                align-self: flex-start;
+                margin-left: 77px;
+            }
+            input{
+                background: #FFFFFF;
+                border: 3px solid #000000;
+                border-radius: 60px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 130%;   
+                height: 50px;
+                width: 350px;
+                padding-left: 25px;
+
+            }
+            .checkbox{
+                -webkit-user-select: none;
+                margin-left: 50px;
+                display: flex;
+                input{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 9px;
+                }
+                .police{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            button{
+                -webkit-user-select: none;
+                height: 40px;
+                width: 230px;
+                background-color: black;
+                border: 2px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 50px;
+                align-self: start;
+                margin-left: 50px;
+                margin-top: 42px;  
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+            }
+        }        
+    }
+}
+.hidden{
+    display: none;
+}

@@ -1,0 +1,29 @@
+.portfolio{
+    display: grid;
+    // grid-template-columns: 1fr;
+    // justify-content: center;
+    .portfolio-title{
+        text-align: center;
+        margin-top: 120px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 51px;
+        // @media screen and (max-width: 460px){
+        //     margin-top: 60px;
+        // }
+    }
+    .portfolio-img-container{
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        // @media screen and (max-width: 1140px){
+        //     grid-template-columns: 1fr 1fr;
+        //  }
+        img{
+            width: 100%;
+        }
+    }
+}
+
