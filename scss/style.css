@@ -12,6 +12,10 @@
   margin: 0 auto;
 }
 
+body {
+  padding-bottom: 500px;
+}
+
 .form .form__overlay {
   z-index: 1000;
   position: fixed;
@@ -391,7 +395,14 @@
 
 .home-content .content-wrapper {
   margin-top: 80px;
-  display: grid;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-content .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .home-content .content-wrapper .title-text {
@@ -402,6 +413,30 @@
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 1200px) {
+  .home-content .content-wrapper .title-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .home-content .content-wrapper .title-text {
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-content .content-wrapper .title-text {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .home-content .content-wrapper .title-text {
+    font-size: 30px;
+  }
+}
+
 .home-content .content-wrapper .sub-title-text {
   font-family: Montserrat;
   font-style: normal;
@@ -409,6 +444,25 @@
   font-size: 22px;
   color: #FFFFFF;
   margin-top: 45px;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-content .content-wrapper .sub-title-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .home-content .content-wrapper .sub-title-text {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .home-content .content-wrapper .sub-title-text {
+    margin-top: 15px;
+    font-size: 13px;
+  }
 }
 
 .home-content .content-wrapper .button-callback {
@@ -446,6 +500,14 @@
   margin-top: 120px;
 }
 
+@media screen and (max-width: 460px) {
+  .welcome .welcome-text .welcome-title {
+    margin-top: 60px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
 .welcome .welcome-text .welcome-subtitle {
   text-align: center;
   font-family: Montserrat;
@@ -456,6 +518,13 @@
   margin-top: 30px;
 }
 
+@media screen and (max-width: 460px) {
+  .welcome .welcome-text .welcome-subtitle {
+    font-size: 18px;
+    line-height: 130%;
+  }
+}
+
 .welcome .welcome-persone {
   margin-top: 74px;
   display: grid;
@@ -463,9 +532,21 @@
   justify-content: space-evenly;
 }
 
+@media screen and (max-width: 760px) {
+  .welcome .welcome-persone {
+    grid-template-columns: 296px;
+  }
+}
+
 .welcome .welcome-persone .persone {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+@media screen and (max-width: 760px) {
+  .welcome .welcome-persone .persone {
+    margin-bottom: 50px;
+  }
 }
 
 .welcome .welcome-persone .persone .persone-photo {

@@ -1,5 +1,7 @@
 .welcome{
-   // height: 100vh;
+   // @media screen and (max-width: 500px){
+   //    grid-template-columns: 296px;
+   // }
    .welcome-text{
 
       .welcome-title{
@@ -10,9 +12,11 @@
          font-size: 42px;
          line-height: 51px;
          margin-top: 120px;
-         // @media screen and (max-width: 460px){
-         //    margin-top: 60px;
-         // }
+         @media screen and (max-width: 460px){
+            margin-top: 60px;
+            font-size: 32px;
+            line-height: 35px;
+         }
       }
       .welcome-subtitle{
          text-align: center;
@@ -22,6 +26,10 @@
          font-size: 22px;
          line-height: 130%;
          margin-top: 30px;
+         @media screen and (max-width: 460px){
+            font-size: 18px;
+            line-height: 130%;
+         }
       }
    }
    .welcome-persone{
@@ -29,9 +37,9 @@
       display: grid;
       grid-template-columns: 296px 296px;
       justify-content: space-evenly;
-      // @media screen and (max-width: 940px){
-      //    grid-template-columns: 450px;
-      // }
+      @media screen and (max-width: 760px){
+         grid-template-columns: 296px;
+      }
       // @media screen and (max-width: 640px){
       //    grid-template-columns: auto;
       // }
@@ -39,9 +47,9 @@
       .persone{
          display: grid;
          grid-template-columns: 1fr;
-         // @media screen and (max-width: 940px){
-         //    margin-bottom: 50px;
-         // }
+         @media screen and (max-width: 760px){
+            margin-bottom: 50px;
+         }
          .persone-photo{
             justify-self: center;
          }
