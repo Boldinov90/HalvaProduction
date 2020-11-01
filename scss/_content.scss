@@ -20,6 +20,9 @@
          font-weight: bold;
          font-size: 64px;
          color: #FFFFFF;
+         text-shadow: 0px 1px 9px rgba(34, 60, 80, 0.5);
+         // text-shadow: 0px 3px 11px black;
+         // color: #252525;
          @media screen and (max-width: 1200px){
             text-align: center;
          }
@@ -40,6 +43,7 @@
          font-size: 22px;
          color: #FFFFFF;
          margin-top: 45px;
+         text-shadow: 0px 1px 9px rgba(34, 60, 80, 0.5);
          @media screen and (max-width: 1200px){
             text-align: center;
          }
