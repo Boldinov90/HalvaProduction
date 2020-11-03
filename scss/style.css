@@ -23,7 +23,7 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.644);
+  background-color: rgba(71, 71, 71, 0.911);
   display: grid;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,7 @@ body {
   width: 450px;
   height: 536px;
   border-radius: 8px;
-  background-color: #ffae00;
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +57,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  color: #1a1a1a;
+  color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
   height: 66px;
@@ -175,7 +175,6 @@ body {
 .home .home__overlay {
   width: 100%;
   height: 100vh;
-  background-color: rgba(255, 174, 0, 0.808);
 }
 
 .header {
@@ -355,7 +354,7 @@ body {
   top: 0;
   height: 100vh;
   width: 320px;
-  background-color: rgba(0, 0, 0, 0.897);
+  background-color: rgba(0, 0, 0, 0.932);
   z-index: 90;
   overflow: auto;
   transition-duration: 0.5s;
@@ -636,11 +635,29 @@ body {
   margin-top: 120px;
 }
 
+@media screen and (max-width: 760px) {
+  .servises .servises-title {
+    margin-top: 60px;
+  }
+}
+
 .servises .servises-cards {
   margin-top: 45px;
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
+}
+
+@media screen and (max-width: 1140px) {
+  .servises .servises-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .servises .servises-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 .servises .servises-cards .servises-cards__item {
@@ -706,11 +723,6 @@ body {
   background-image: url("../img/portfolio/Rectangle 29.jpg");
 }
 
-.secret-quality {
-  display: grid;
-  justify-content: center;
-}
-
 .secret-quality .secret-quality__title {
   margin-top: 120px;
   font-family: Montserrat;
@@ -719,17 +731,28 @@ body {
   font-size: 42px;
   line-height: 51px;
   text-align: center;
-  width: 1170px;
+}
+
+@media screen and (max-width: 800px) {
+  .secret-quality .secret-quality__title {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .secret-quality .secret-quality__title {
+    margin-top: 30px;
+  }
 }
 
 .secret-quality .secret-quality-items {
   margin-top: 60px;
 }
 
-.secret-quality .secret-quality-items .quality-item {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+@media screen and (max-width: 640px) {
+  .secret-quality .secret-quality-items {
+    margin-top: 30px;
+  }
 }
 
 .secret-quality .secret-quality-items .quality-item .item-first {
@@ -746,6 +769,12 @@ body {
   transition-duration: 0.2s;
 }
 
+@media screen and (max-width: 450px) {
+  .secret-quality .secret-quality-items .quality-item .item-first {
+    height: 90px;
+  }
+}
+
 .secret-quality .secret-quality-items .quality-item .item-first .item-first-text {
   font-family: Montserrat;
   font-style: normal;
@@ -755,8 +784,21 @@ body {
   margin-left: 30px;
 }
 
+@media screen and (max-width: 800px) {
+  .secret-quality .secret-quality-items .quality-item .item-first .item-first-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .secret-quality .secret-quality-items .quality-item .item-first .item-first-text {
+    font-size: 16px;
+  }
+}
+
 .secret-quality .secret-quality-items .quality-item .item-first .arrow-up {
   margin-right: 30px;
+  margin-left: 30px;
 }
 
 .secret-quality .secret-quality-items .quality-item .item-first:hover {
@@ -782,8 +824,14 @@ body {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 20px;
   line-height: 130%;
+}
+
+@media screen and (max-width: 800px) {
+  .secret-quality .secret-quality-items .quality-item .item-second .item-second-text {
+    font-size: 18px;
+  }
 }
 
 .secret-quality .secret-quality-items .quality-item .hidden {
@@ -813,10 +861,22 @@ body {
   line-height: 51px;
 }
 
+@media screen and (max-width: 650px) {
+  .portfolio .portfolio-title {
+    margin-top: 40px;
+  }
+}
+
 .portfolio .portfolio-img-container {
   margin-top: 45px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio .portfolio-img-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .portfolio .portfolio-img-container img {

@@ -1,9 +1,5 @@
 .welcome{
-   // @media screen and (max-width: 500px){
-   //    grid-template-columns: 296px;
-   // }
    .welcome-text{
-
       .welcome-title{
          text-align: center;
          font-family: Montserrat;
@@ -40,10 +36,6 @@
       @media screen and (max-width: 760px){
          grid-template-columns: 296px;
       }
-      // @media screen and (max-width: 640px){
-      //    grid-template-columns: auto;
-      // }
-   
       .persone{
          display: grid;
          grid-template-columns: 1fr;

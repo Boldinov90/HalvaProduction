@@ -88,6 +88,7 @@
                width: 30px;
                height: 30px;
                transition-duration: 0.2s;
+
             }
             img:hover{
                transform: scale(1.2);
@@ -138,7 +139,7 @@
          .menu-icon.menu-icon-active .menu-icon-line{
            background-color: transparent;
          }
-         
+
          .menu-icon.menu-icon-active .menu-icon-line::before{
            transform: rotate(45deg);
            top: 0;
@@ -149,22 +150,23 @@
             transform: rotate(-45deg);
             top: 0;
             transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-         }
-      .mobile-nav{
+         }  
+      .mobile-nav{   
          display: block;
          position: absolute;
          right: -320px;
          top: 0;
-         height: 100vh;
-         width: 320px;
-         background-color: rgba(0, 0, 0, 0.897);
+         height: 100vh; 
+         width: 320px;  
+         background-color: rgba(0, 0, 0, 0.932);
+         // background-color: rgba(18, 17, 20, 0.897);
          z-index: 90;
          overflow: auto;
          transition-duration: 0.5s;
          .mobile-nav__title{
             margin-left: 50px;
             margin-top: 120px;
-            margin-bottom: 70px;
+            margin-bottom: 70px; 
             color: white;
             font-size: 28px;
             font-family: Montserrat;
