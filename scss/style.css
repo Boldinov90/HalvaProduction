@@ -899,6 +899,12 @@ body {
   line-height: 51px;
 }
 
+@media screen and (max-width: 460px) {
+  .howWeWork .howWeWork-title {
+    margin-top: 60px;
+  }
+}
+
 .howWeWork .howWeWork-items-list {
   width: 100%;
   margin-top: 45px;
@@ -910,6 +916,12 @@ body {
   display: grid;
   grid-template-columns: 56px auto;
   justify-content: start;
+}
+
+@media screen and (max-width: 500px) {
+  .howWeWork .howWeWork-items-list .howWeWork-item {
+    grid-template-columns: 36px auto;
+  }
 }
 
 .howWeWork .howWeWork-items-list .howWeWork-item .howWeWork-point-circle {
@@ -928,6 +940,14 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 500px) {
+  .howWeWork .howWeWork-items-list .howWeWork-item .howWeWork-point-circle {
+    font-size: 16px;
+    height: 36px;
+    width: 36px;
+  }
+}
+
 .howWeWork .howWeWork-items-list .howWeWork-item .howWeWork-text {
   margin-left: 38px;
   font-family: Montserrat;
@@ -938,6 +958,13 @@ body {
   display: grid;
   justify-content: left;
   align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .howWeWork .howWeWork-items-list .howWeWork-item .howWeWork-text {
+    font-size: 14px;
+    margin-left: 10px;
+  }
 }
 
 .contacts {
