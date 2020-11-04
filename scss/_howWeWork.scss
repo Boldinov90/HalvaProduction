@@ -25,6 +25,8 @@
             justify-content: start;
             @media screen and (max-width: 500px){
                 grid-template-columns: 36px auto;
+                margin-bottom: 25px;
+
             }
             .howWeWork-point-circle{
                 height: 56px;

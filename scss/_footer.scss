@@ -1,6 +1,9 @@
 .footer{
     margin-top: 60px;
     background-color: black;
+    @media screen and (max-width: 380px){
+        margin-top: 0px;
+    }
     .footer-overlay{
         width: 100%;
         height: 120px;
@@ -8,13 +11,13 @@
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: space-between;
-        // @media screen and (max-width: 380px){
-        //     grid-template-columns: 1fr;
-        // }
+        @media screen and (max-width: 380px){
+            grid-template-columns: 1fr;
+        }
         .footer-police{
-            // @media screen and (max-width: 380px){
-            //     justify-self: center;
-            // }
+            @media screen and (max-width: 380px){
+                justify-self: center;
+            }
             .police-title{
                 font-family: Montserrat;
                 font-style: normal;
@@ -22,9 +25,9 @@
                 font-size: 18px;
                 line-height: 22px;
                 color: #FFFFFF;
-                // @media screen and (max-width: 380px){
-                //     text-align: center;
-                // }
+                @media screen and (max-width: 380px){
+                    text-align: center;
+                }
             }
             .police-subtitle{
                 font-family: Montserrat;
@@ -33,17 +36,17 @@
                 font-size: 10px;
                 line-height: 12px;
                 color: #FFFFFF;
-                // @media screen and (max-width: 380px){
-                //     text-align: center;
-                // }
+                @media screen and (max-width: 380px){
+                    text-align: center;
+                }
             }
         }
         .footer__messedgeses{
             justify-self: end;
             margin-right: 15px;
-            // @media screen and (max-width: 380px){
-            //     justify-self: center;
-            // }
+            @media screen and (max-width: 380px){
+                justify-self: center;
+            }
             img{
                 height: 32px;
                 width: 32px;
