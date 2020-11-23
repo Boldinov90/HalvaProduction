@@ -15,7 +15,7 @@
         form{
             padding-top: 40px;
             width: 450px;
-            height: 536px;
+            height: 566px;
             border-radius: 8px;
             background-color: rgb(31, 31, 31);
             
@@ -24,11 +24,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-left: 15px;
-            padding-right: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
             @media screen and (max-width: 480px){
                 width: 300px;
-                height: 436px;
+                height: 406px;
                 padding-top: 20px;
 
             }
@@ -56,17 +56,19 @@
                 line-height: 130%;
                 color: #8D8D8D;
                 margin-top: 24px;
+                margin-bottom: 5px;
                 align-self: flex-start;
                 margin-left: 20px;
                 @media screen and (max-width: 480px){
                     margin-top: 5px;
-                    margin-bottom: 0;
+                    margin-bottom: 5px;
                 }
             }
             .name, .phone,  .email{
                 background: #FFFFFF;
                 border: 3px solid #000000;
                 border-radius: 60px;
+                border: none;
                 font-family: Montserrat;
                 font-style: normal;
                 font-weight: normal;
@@ -77,14 +79,16 @@
                 width: 100%;
                 padding-left: 25px;
                 @media screen and (max-width: 480px){
-                    height: 50px;
+                    // height: 50px;
                     // width: 280px;
+                    height: 30px;
                 }
             }
             .checkbox{
                 -webkit-user-select: none;
                 margin-left: 50px;
                 display: flex;
+                cursor: pointer;
                 @media screen and (max-width: 480px){
                     margin-left: 15px;
                     margin-top: 10px;
@@ -104,7 +108,7 @@
                 -webkit-user-select: none;
                 height: 40px;
                 width: 230px;
-                background-color: black;
+                background-color: rgb(31, 31, 31);
                 border: 2px solid #FFFFFF;
                 box-sizing: border-box;
                 border-radius: 50px;
@@ -117,6 +121,7 @@
                 font-size: 18px;
                 line-height: 22px;
                 color: #FFFFFF;
+                cursor: pointer;
                 @media screen and (max-width: 480px){
                     margin: 0 auto;
                     margin-top: 10px;
