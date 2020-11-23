@@ -30,7 +30,7 @@
   width: 450px;
   height: 536px;
   border-radius: 8px;
-  background-color: black;
+  background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,7 +161,7 @@
 }
 
 .home {
-  background-image: url("../img/header/Background.png");
+  background-image: url("../img/header/Background3.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -191,8 +191,8 @@
 }
 
 .header .header__wrap .header__logo a img {
-  width: 139px;
-  margin-top: 10px;
+  height: 70px;
+  margin-top: 5px;
   transition-duration: 0.3s;
 }
 
@@ -350,7 +350,7 @@
   top: 0;
   height: 100vh;
   width: 320px;
-  background-color: rgba(0, 0, 0, 0.932);
+  background-color: rgba(31, 31, 31, 0.98);
   z-index: 90;
   overflow: auto;
   transition-duration: 0.5s;
@@ -435,7 +435,9 @@
 }
 
 .home-content .content-wrapper {
+  display: grid;
   margin-top: 80px;
+  position: relative;
 }
 
 @media screen and (max-width: 1200px) {
@@ -446,6 +448,15 @@
   }
 }
 
+.home-content .content-wrapper .triangle {
+  position: absolute;
+  top: -200px;
+  width: 50%;
+  left: 50%;
+  margin-left: -15%;
+  transform: rotate(50deg);
+}
+
 .home-content .content-wrapper .title-text {
   font-family: Montserrat;
   font-style: normal;
@@ -453,6 +464,7 @@
   font-size: 64px;
   color: #FFFFFF;
   text-shadow: 0px 1px 9px rgba(34, 60, 80, 0.5);
+  z-index: 99;
 }
 
 @media screen and (max-width: 1200px) {
@@ -487,6 +499,7 @@
   color: #FFFFFF;
   margin-top: 45px;
   text-shadow: 0px 1px 9px rgba(34, 60, 80, 0.5);
+  z-index: 99;
 }
 
 @media screen and (max-width: 1200px) {
@@ -526,6 +539,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
+  z-index: 99;
 }
 
 .home-content .content-wrapper .button-callback:hover {
@@ -1153,7 +1167,7 @@
 
 .footer {
   margin-top: 60px;
-  background-color: black;
+  background-color: #1f1f1f;
 }
 
 @media screen and (max-width: 380px) {

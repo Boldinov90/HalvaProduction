@@ -32,6 +32,8 @@ for(let anchor of anchors){
          behavior: "smooth",
          block: "start"
       })
+      mobileNavContainer.classList.remove('mobile-nav--active');
+      menuToggle.classList.remove('menu-icon-active');
       let active = document.querySelector(".header__menu--active");
       if(active == null){
          anchor.classList.add("header__menu--active")
@@ -66,7 +68,7 @@ window.addEventListener("scroll", ()=>{
 // Отмена прозрачности у хедара при скроле от 100px
 window.onscroll = function() {
    let scrolled = window.pageYOffset || document.documentElement.scrollTop;
-   document.getElementById('header').style.backgroundColor = scrolled < 100 ? "rgba(0, 0, 0, 0)" : "rgb(0, 0, 0)";
+   document.getElementById('header').style.backgroundColor = scrolled < 100 ? "rgba(0, 0, 0, 0)" : "rgb(31, 31, 31)";
    document.getElementById('header').style.transitionDuration = scrolled < 100 ? "0.7s" : "0.9s";
 }
 
