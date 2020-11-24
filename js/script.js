@@ -30,7 +30,7 @@ for(let anchor of anchors){
       const blockId = anchor.getAttribute("href");
       document.querySelector('' + blockId).scrollIntoView({
          behavior: "smooth",
-         block: "start"
+         block: "start" 
       })
       mobileNavContainer.classList.remove('mobile-nav--active');
       menuToggle.classList.remove('menu-icon-active');

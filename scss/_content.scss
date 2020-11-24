@@ -5,12 +5,10 @@
    grid-template-columns: 1fr;
    align-items: center;
    -webkit-user-select: none;
-
    .content-wrapper{
       display: grid;
       margin-top: 80px;
       position: relative;
-      // display: grid;
       @media screen and (max-width: 1200px){
          display: flex;
          flex-direction: column;
@@ -19,16 +17,12 @@
       .triangle{
          position: absolute;
          top: -200px;
-         // height: 500px;
          width: 50%;
          left: 50%;
          margin-left: -15%;
-         // opacity: 0.1;
-         // opacity: 0.4;
          transform: rotate(50deg);
          @media screen and (max-width: 475px){
             top: -120px;
-            
          }
       }
       .title-text {
@@ -70,7 +64,6 @@
          @media screen and (max-width: 420px){
             margin-top: 15px;
             font-size: 13px;
-
          }
       }
       .button-callback{
@@ -96,7 +89,6 @@
             transform: scale(1.06);
             transition-duration: 0.5s;
          }
-
       }
    }
 }

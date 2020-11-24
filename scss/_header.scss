@@ -1,5 +1,4 @@
 .header{
-   // background-color: rgb(31, 31, 31);
    -webkit-user-select: none;
    width: 100%;
    height: 80px;
@@ -13,7 +12,6 @@
       padding: 0 40px;
       width: 100%;
       .header__logo a img{
-         // width: 139px;
          height: 70px;
          margin-top: 5px;
          transition-duration: 0.3s;
@@ -41,9 +39,6 @@
                   text-decoration: none;
                   color: #FFFFFF;
                   text-shadow: 0px 1px 9px rgba(34, 60, 80, 0.5);
-
-                  // color: #252525;
-
                   font-family: Montserrat;
                   font-style: normal;
                   font-weight: normal;
@@ -58,19 +53,14 @@
                }
                a:hover{
                   border-bottom: 3px solid white;
-                  // border-bottom: 3px solid #252525;
-
                   transition: 0.9s;
                }               
                .header__menu--active{
                   border-bottom: 3px solid white;
-                  // border-bottom: 3px solid #252525;
                } 
             }
-
          }
       } 
-   
       .header__messedgeses{
          display: grid;
          grid-template-columns: 48px 48px 48px;
@@ -89,7 +79,6 @@
                width: 30px;
                height: 30px;
                transition-duration: 0.2s;
-
             }
             img:hover{
                transform: scale(1.2);
@@ -108,14 +97,12 @@
             align-items: center;
          }
       }
-         
          .menu-icon-line {
            position: relative;
            width: 30px;
            height: 5px;
            background-color: #fff;
          }
-         
          .menu-icon-line::before {
            position: absolute;
            left: 0;
@@ -136,17 +123,14 @@
            background-color: #fff;
            transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
          }
-         
          .menu-icon.menu-icon-active .menu-icon-line{
            background-color: transparent;
          }
-
          .menu-icon.menu-icon-active .menu-icon-line::before{
            transform: rotate(45deg);
            top: 0;
            transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-         }
-         
+         }        
          .menu-icon.menu-icon-active .menu-icon-line::after{
             transform: rotate(-45deg);
             top: 0;
@@ -160,7 +144,6 @@
          height: 100vh; 
          width: 320px;  
          background-color:rgba(31, 31, 31, 0.98);
-         // background-color: rgba(18, 17, 20, 0.897);
          z-index: 90;
          overflow: auto;
          transition-duration: 0.5s;

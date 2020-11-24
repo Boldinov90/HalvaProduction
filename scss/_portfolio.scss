@@ -1,7 +1,5 @@
 .portfolio{
     display: grid;
-    // grid-template-columns: 1fr;
-    // justify-content: center;
     .portfolio-title{
         text-align: center;
         margin-top: 120px;
@@ -12,6 +10,9 @@
         line-height: 51px;
         @media screen and (max-width: 650px){
             margin-top: 40px;
+        }
+        @media screen and (max-width: 460px){
+            font-size: 32px;
         }
     }
     .portfolio-img-container{

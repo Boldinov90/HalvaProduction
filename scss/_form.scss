@@ -1,5 +1,4 @@
 .form{
-    
     .form__overlay{
         z-index: 1000;
         position: fixed;
@@ -7,7 +6,6 @@
         right: 0;
         top: 0;
         bottom: 0;
-        // background-color: rgba(0, 0, 0, 0.644);
         background-color: rgba(71, 71, 71, 0.911);
         display: grid;
         justify-content: center;
@@ -18,9 +16,6 @@
             height: 566px;
             border-radius: 8px;
             background-color: rgb(31, 31, 31);
-            
-            // background-color: rgb(255, 174, 0);
-            // background-color: rgb(66, 66, 66);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -30,7 +25,6 @@
                 width: 300px;
                 height: 406px;
                 padding-top: 20px;
-
             }
             .form__body-title{
                 -webkit-user-select: none;
@@ -40,7 +34,6 @@
                 font-size: 18px;
                 line-height: 22px;
                 color: #FFFFFF;
-                // color: #1a1a1a;
                 text-align: center;
                 text-transform: uppercase;
                 height: 66px;
@@ -75,12 +68,9 @@
                 font-size: 12px;
                 line-height: 130%;   
                 height: 50px;
-                // width: 350px;
                 width: 100%;
                 padding-left: 25px;
                 @media screen and (max-width: 480px){
-                    // height: 50px;
-                    // width: 280px;
                     height: 30px;
                 }
             }
@@ -126,7 +116,6 @@
                     margin: 0 auto;
                     margin-top: 10px;
                     height: 50px;
-
                 }
             }
         }        
