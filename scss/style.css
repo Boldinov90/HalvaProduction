@@ -560,6 +560,12 @@
           transform: rotate(50deg);
 }
 
+@media screen and (max-width: 1440px) {
+  .home-content .content-wrapper .triangle {
+    top: -220px;
+  }
+}
+
 @media screen and (max-width: 475px) {
   .home-content .content-wrapper .triangle {
     top: -120px;

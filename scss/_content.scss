@@ -21,6 +21,9 @@
          left: 50%;
          margin-left: -15%;
          transform: rotate(50deg);
+         @media screen and (max-width: 1440px){
+            top: -220px;
+         }
          @media screen and (max-width: 475px){
             top: -120px;
          }
