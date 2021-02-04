@@ -170,6 +170,17 @@
   background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
+  position: relative;
+}
+
+.home .header__bg-thin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 290px;
+  background-image: url("../img/header/bg-thin.png");
 }
 
 .home .home__overlay {
@@ -232,7 +243,7 @@
   justify-content: center;
   text-decoration: none;
   color: #FFFFFF;
-  text-shadow: 0px 1px 9px rgba(34, 60, 80, 0.5);
+  text-shadow: 0px 1px 6px black;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;

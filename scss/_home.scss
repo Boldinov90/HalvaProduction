@@ -5,6 +5,16 @@
    background-position: center center;
    background-repeat: no-repeat;
    height: 100vh;
+   position: relative;
+   .header__bg-thin{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 290px;
+      background-image: url("../img/header/bg-thin.png");
+  }
    .home__overlay{
       width: 100%;
       height: 100vh;
