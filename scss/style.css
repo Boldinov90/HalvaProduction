@@ -455,7 +455,7 @@
 .home-content .content-wrapper .triangle {
   position: absolute;
   top: -200px;
-  width: 50%;
+  width: 45%;
   left: 50%;
   margin-left: -15%;
   transform: rotate(50deg);
