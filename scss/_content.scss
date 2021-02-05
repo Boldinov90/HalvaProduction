@@ -4,7 +4,70 @@
    display: grid;
    grid-template-columns: 1fr;
    align-items: center;
+   position: relative;
    // -webkit-user-select: none;
+   .header__scroll-arrow-wrapper{
+      position: absolute;
+      bottom: 80px;
+      right: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      @media screen and(max-width: 1024px){
+          bottom: 50px;    
+      }   
+      .header__scroll-circle{
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color:  rgba(53, 55, 62, 0.3);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          animation: scrollCircle 2s infinite;
+          @keyframes scrollCircle {
+              from{
+                  transform: translateY(0);
+              }
+              25%{
+                  transform: translateY(0);
+              }
+              50%{
+                  transform: translateY(20px);
+              }
+              75%{
+                  transform: translateY(0);
+              }
+              to{
+                  transform: translateY(0);
+              }
+          }
+          .header__scroll-img{
+              width: 30px;
+              filter: drop-shadow(0px 4px 3px #000);
+              animation: scrollCircle 2s infinite;
+              @keyframes scrollCircle {
+                  from{
+                      transform: translateY(0);
+                  }
+                  25%{
+                      transform: translateY(0);
+                  }
+                  50%{
+                      transform: translateY(10px);
+                  }
+                  75%{
+                      transform: translateY(0);
+                  }
+                  to{
+                      transform: translateY(0);
+                  }
+              }
+          }
+      }
+
+  }
    .content-wrapper{
       display: grid;
       margin-top: 80px;
