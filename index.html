@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +9,10 @@
    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
-   <div class="form">
+   <div class="form" id="form">
       <div class="form__overlay">
          <form class="form__body" id="form__body">
+            <img src="img/form-close.png" alt="close" class="form-close">
             <div class="form__body-title">
                Оставьте свои контакты и мы свяжемся с Вами в ближайшее время
             </div>
@@ -23,7 +23,7 @@
             <label for="email">E-mail</label> 
             <input id="email" class="email _req form-input" name="email" type="email" placeholder="Введите Ваш E-mail">
             <label for="checkbox" class="checkbox">
-               <input id="checkbox" type="checkbox" placeholder="" class="_req" required>
+               <input id="checkbox" type="checkbox" placeholder="" class="_req" required checked>
                <div class="police">
                   Согласие на обработку моих персональных данных
                </div>  
@@ -34,8 +34,11 @@
          </form>
          <form class="form__body-reaction" id="form__body-reaction">
             <div class="form__body-title">
-               Оставьте свои контакты и мы свяжемся с Вами в ближайшее время
+               Спасибо. Мы свяжемся с Вами в ближайшее время.
             </div>
+            <div class="form__body-reaction--icon">
+               <img class="reaction-img" src="img/good.png" alt="icon">                   
+           </div>
          </form>
       </div>
    </div>

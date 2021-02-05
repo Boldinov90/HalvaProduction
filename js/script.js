@@ -72,51 +72,39 @@ window.onscroll = function() {
    document.getElementById('header').style.transitionDuration = scrolled < 100 ? "0.7s" : "0.9s";
 }
 
-// // Открытие фотмы обратной связи
-// const btns = document.querySelectorAll(".btn");
-// for(let btn of btns){
-//    btn.addEventListener("click", function(e){
-//       e.preventDefault();
-//       // console.log('btn', btn)
-//       const form = document.querySelector(".form");
-//       form.classList.remove("hidden");
-//    })
-// }
-
-// // Закрытие формы обратной связи
-// document.querySelector(".form__overlay").addEventListener("click", function(e){
-//    if(e.target.closest(".form__body")){
-//    }else{
-//       const form = document.querySelector(".form");
-//       form.classList.add("hidden");
-//    }
-// })
-
-
-
-
-
-
-
-
 // ================    Функция отправки данных из формы обратной связи на почту     ====================
 // =====================================================================================================
 document.addEventListener('DOMContentLoaded', function(){
-   // ================    Функция отображения формы отзыва на странице     ====================
+   // ================    Отображение формы отзыва на странице     ====================
    // =====================================================================================================
-   document.addEventListener('click', function(e){
-      let form = document.querySelector('.form');
-      if(e.target.classList.contains('button-callback')){
-         form.style.display = 'block';
+   // Находим обертку формы
+   const formOverlay = document.getElementById('form');
+   // Находим форму
+   const form = document.getElementById('form__body');
+   // Находим форму reaction 
+   const formReaction = document.getElementById('form__body-reaction');
+   // Находим все кнопки "Связаться с нами"
+   const btns = document.querySelectorAll(".btn");
+   // Проходим циклом по массиву
+   for(let btn of btns){
+      // Слушаем клик по кнопке
+      btn.addEventListener("click", function(){
+         // Делаем обертку с формой видимой
+         formOverlay.style.display = 'block';
+         // Запрещаем скроллинг страницы
          document.querySelector('body').classList.toggle("no-scroll");
-      }else if(e.target.classList.contains('form__overlay')){
-         form.style.display = 'none';
+      })
+   }
+   // Слушаем любой клик
+   document.addEventListener('click', function(e){
+      // Если клик был сделан по обертке
+      if(e.target.classList.contains('form__overlay') || e.target.classList.contains('form-close')){
+         // Скрываем обертку вместе с формой
+         formOverlay.style.display = 'none';
+         // Разрешаем скроллинг страницы
          document.querySelector('body').classList.toggle("no-scroll");
       }
-  });
-   // Находим всю форму
-   const form = document.getElementById('form__body');
-   const formReaction = document.getElementById('form__body-reaction');
+   });
    // Слушаем событие отправка формы
    form.addEventListener('submit', formSend);
    async function formSend(e){
@@ -148,8 +136,7 @@ document.addEventListener('DOMContentLoaded', function(){
                setTimeout(() => {  
                    form.style.display = 'flex';
                    formReaction.style.display = 'none';
-                   // formReviewOverflow.style.display = 'none';
-
+                   formOverlay.style.display = 'none';
                }, 2500);
            }else{
                alert('Ошибка');
