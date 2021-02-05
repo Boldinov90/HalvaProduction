@@ -10,20 +10,20 @@
    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
-   <div class="form hidden">
+   <div class="form">
       <div class="form__overlay">
-         <form class="form__body">
+         <form class="form__body" id="form__body">
             <div class="form__body-title">
                Оставьте свои контакты и мы свяжемся с Вами в ближайшее время
             </div>
             <label for="name">Ваше имя</label> 
-            <input id="name" class="name" type="text" placeholder="Введите Ваше имя" required>
+            <input id="name" class="name _req form-input" name="name" type="text" placeholder="Введите Ваше имя">
             <label for="phone">Телефон</label> 
-            <input id="phone" class="phone" type="phone" placeholder="+7 (ХХХ) ХХХ ХХ ХХ" required>
+            <input id="phone" class="phone _req form-input" name="phone" type="phone" placeholder="+7 (ХХХ) ХХХ ХХ ХХ">
             <label for="email">E-mail</label> 
-            <input id="email" class="email" type="email" placeholder="Введите Ваш E-mail" required>
+            <input id="email" class="email _req form-input" name="email" type="email" placeholder="Введите Ваш E-mail">
             <label for="checkbox" class="checkbox">
-               <input id="checkbox" type="checkbox" placeholder="" required>
+               <input id="checkbox" type="checkbox" placeholder="" class="_req" required>
                <div class="police">
                   Согласие на обработку моих персональных данных
                </div>  
@@ -31,6 +31,11 @@
             <button type="submit">
                Отправить
             </button>
+         </form>
+         <form class="form__body-reaction" id="form__body-reaction">
+            <div class="form__body-title">
+               Оставьте свои контакты и мы свяжемся с Вами в ближайшее время
+            </div>
          </form>
       </div>
    </div>
@@ -81,9 +86,7 @@
          <div class="home-content">
             <div class="container">
                <div class="content-wrapper">
-                  <!-- <div class="content-img"> -->
                   <img src="img/header/triangle-drawing-11.png" alt="image" class="triangle wow fadeIn" data-wow-duration="3.5s" data-wow-delay="0.5s">
-                  <!-- </div> -->
                   <div class="title-text wow fadeIn" data-wow-duration="3.5s" data-wow-delay="0.3s">СОЗДАЕМ ЛУЧШИЙ ВИДЕОКОНТЕНТ</div>
                   <div class="sub-title-text wow fadeIn" data-wow-duration="3.5s" data-wow-delay="0.6s">Аренда студии для фото и видеосъемок с
                      хромакеем

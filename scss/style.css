@@ -12,6 +12,16 @@
   margin: 0 auto;
 }
 
+.no-scroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.form {
+  display: none;
+}
+
 .form .form__overlay {
   z-index: 1000;
   position: fixed;
@@ -25,7 +35,7 @@
   align-items: center;
 }
 
-.form .form__overlay form {
+.form .form__overlay .form__body {
   padding-top: 40px;
   width: 450px;
   height: 566px;
@@ -39,15 +49,14 @@
 }
 
 @media screen and (max-width: 480px) {
-  .form .form__overlay form {
+  .form .form__overlay .form__body {
     width: 300px;
     height: 406px;
     padding-top: 20px;
   }
 }
 
-.form .form__overlay form .form__body-title {
-  -webkit-user-select: none;
+.form .form__overlay .form__body .form__body-title {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -60,12 +69,12 @@
 }
 
 @media screen and (max-width: 480px) {
-  .form .form__overlay form .form__body-title {
+  .form .form__overlay .form__body .form__body-title {
     margin-bottom: 30px;
   }
 }
 
-.form .form__overlay form label {
+.form .form__overlay .form__body label {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -79,13 +88,13 @@
 }
 
 @media screen and (max-width: 480px) {
-  .form .form__overlay form label {
+  .form .form__overlay .form__body label {
     margin-top: 5px;
     margin-bottom: 5px;
   }
 }
 
-.form .form__overlay form .name, .form .form__overlay form .phone, .form .form__overlay form .email {
+.form .form__overlay .form__body .name, .form .form__overlay .form__body .phone, .form .form__overlay .form__body .email {
   background: #FFFFFF;
   border: 3px solid #000000;
   border-radius: 60px;
@@ -101,39 +110,37 @@
 }
 
 @media screen and (max-width: 480px) {
-  .form .form__overlay form .name, .form .form__overlay form .phone, .form .form__overlay form .email {
+  .form .form__overlay .form__body .name, .form .form__overlay .form__body .phone, .form .form__overlay .form__body .email {
     height: 30px;
   }
 }
 
-.form .form__overlay form .checkbox {
-  -webkit-user-select: none;
+.form .form__overlay .form__body .checkbox {
   margin-left: 50px;
   display: flex;
   cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
-  .form .form__overlay form .checkbox {
+  .form .form__overlay .form__body .checkbox {
     margin-left: 15px;
     margin-top: 10px;
   }
 }
 
-.form .form__overlay form .checkbox input {
+.form .form__overlay .form__body .checkbox input {
   width: 20px;
   height: 20px;
   margin-right: 9px;
 }
 
-.form .form__overlay form .checkbox .police {
+.form .form__overlay .form__body .checkbox .police {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form .form__overlay form button {
-  -webkit-user-select: none;
+.form .form__overlay .form__body button {
   height: 40px;
   width: 230px;
   background-color: #1f1f1f;
@@ -153,15 +160,38 @@
 }
 
 @media screen and (max-width: 480px) {
-  .form .form__overlay form button {
+  .form .form__overlay .form__body button {
     margin: 0 auto;
     margin-top: 10px;
     height: 50px;
   }
 }
 
+.form .form__overlay .form__body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(170, 170, 170, 0.384) url("../img/gifs/wait-load.gif") center/150px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.form .form__overlay .form__body._sending::after {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
 .hidden {
   display: none;
+}
+
+.form-input._error {
+  box-shadow: 0 0 15px red;
 }
 
 .home {
@@ -189,7 +219,6 @@
 }
 
 .header {
-  -webkit-user-select: none;
   width: 100%;
   height: 80px;
   position: fixed;
@@ -811,7 +840,6 @@
 }
 
 .secret-quality .secret-quality-items .quality-item .item-first {
-  -webkit-user-select: none;
   cursor: pointer;
   margin-top: 30px;
   width: 100%;
