@@ -358,7 +358,6 @@
   line-height: 22px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  transition: 0.3s;
   padding-bottom: 5px;
   padding-top: 8px;
   border-bottom: 3px solid rgba(255, 255, 255, 0);
@@ -366,6 +365,7 @@
 
 .header .header__wrap .header__navbar .header__navbar-list .header__navbar-item .header__menu--active {
   border-bottom: 3px solid white;
+  transition: 0.3s;
 }
 
 .header .header__wrap .header__messedgeses {
