@@ -22,10 +22,10 @@ for(let i = 0; i < call.length; i++){
    })
 }
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 // =========== Навигация по сайту =============
-=======
->>>>>>> 36e6c065afcebdd3f61822579758d7a9eb6a7b1a
+// =======
+// >>>>>>> 36e6c065afcebdd3f61822579758d7a9eb6a7b1a
 $(document).ready(function(){
    // Добавить плавную прокрутку до всех ссылок
    $("a").on('click', function(event) {
