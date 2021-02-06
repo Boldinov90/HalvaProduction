@@ -46,7 +46,6 @@
                   line-height: 22px;
                   letter-spacing: 1.5px;
                   text-transform: uppercase;
-// <<<<<<< HEAD
                   padding-bottom: 5px;
                   padding-top: 8px;
                   border-bottom: 3px solid rgba(255, 255, 255, 0);
@@ -54,7 +53,6 @@
                .header__menu--active{
                   border-bottom: 3px solid white;
                   transition: 0.3s;
-// =======
                   transition: 0.1s;
                   padding-bottom: 5px;
                   padding-top: 8px;
@@ -65,7 +63,6 @@
                }               
                .header__menu--active{
                   border-bottom: 3px solid #fdcd0c;
-// >>>>>>> ee9903fe1bfd5ce519e5d6797042a9624e01fc03
                } 
             }
          }
