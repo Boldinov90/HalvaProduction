@@ -22,28 +22,6 @@ for(let i = 0; i < call.length; i++){
    })
 }
 
-// =========== Навигация по сайту =============
-// const anchors = document.querySelectorAll('a[href*= "#"]')
-// for(let anchor of anchors){
-//    anchor.addEventListener("click", function(event){
-//       event.preventDefault();
-//       const blockId = anchor.getAttribute("href");
-//       document.querySelector('' + blockId).scrollIntoView({
-//          behavior: "smooth",
-//          block: "start" 
-//       })
-//       mobileNavContainer.classList.remove('mobile-nav--active');
-//       menuToggle.classList.remove('menu-icon-active');
-//       let active = document.querySelector(".header__menu--active");
-//       if(active == null){
-//          anchor.classList.add("header__menu--active")
-//       }else{
-//          active.classList.remove("header__menu--active");
-//          anchor.classList.add("header__menu--active");
-//       }
-//    })
-// }
-
 $(document).ready(function(){
    // Добавить плавную прокрутку до всех ссылок
    $("a").on('click', function(event) {
@@ -74,33 +52,6 @@ $(document).ready(function(){
       } // Конец, если
    });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Изменение активного класса навигации при скроле
 window.addEventListener("scroll", ()=>{
