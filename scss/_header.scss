@@ -48,17 +48,16 @@
                   line-height: 22px;
                   letter-spacing: 1.5px;
                   text-transform: uppercase;
-                  transition: 0.3s;
+                  transition: 0.1s;
                   padding-bottom: 5px;
                   padding-top: 8px;
                   border-bottom: 3px solid rgba(255, 255, 255, 0);
                }
-               // a:hover{
-               //    border-bottom: 3px solid white;
-               //    // transition: 0.3s;
-               // }               
+               a:hover{
+                  color: #fdcd0c;
+               }               
                .header__menu--active{
-                  border-bottom: 3px solid white;
+                  border-bottom: 3px solid #fdcd0c;
                } 
             }
          }
