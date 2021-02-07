@@ -186,47 +186,47 @@ document.addEventListener('DOMContentLoaded', function(){
 
 // ====================     Настройки нижнего слайдера (цены и услуги)     ===================
 // ===========================================================================================
-$(document).ready(function() {
-   const pricesSlider = $("#portfolioSlider");
-   pricesSlider.owlCarousel({
-       items: 1,
-       loop: true, // зацикливание
-       dots: true,
-       // margin: -100,
-       smartSpeed: 500,
-      //  responsive: {
-      //      0: {
-      //          margin: 2,
-      //          items: 1
-      //      },
-      //      370: {
-      //          items: 1,
-      //          margin: -80
-      //      },
-      //      430: {
-      //          items: 1,
-      //          margin: -130
-      //      },
-      //      464: {
-      //          items: 1,
-      //          margin: -170
-      //      },
-      //      544: {
-      //          items: 1,
-      //          margin: -250
-      //      },
-      //      670: {
-      //          items: 2,
-      //          margin: -100
-      //      },
-      //      830: {
-      //          items: 3,
-      //          margin: 2
+// $(document).ready(function() {
+//    const pricesSlider = $("#portfolioSlider");
+//    pricesSlider.owlCarousel({
+//        items: 1,
+//        loop: true, // зацикливание
+//        dots: true,
+//        // margin: -100,
+//        smartSpeed: 500,
+//       //  responsive: {
+//       //      0: {
+//       //          margin: 2,
+//       //          items: 1
+//       //      },
+//       //      370: {
+//       //          items: 1,
+//       //          margin: -80
+//       //      },
+//       //      430: {
+//       //          items: 1,
+//       //          margin: -130
+//       //      },
+//       //      464: {
+//       //          items: 1,
+//       //          margin: -170
+//       //      },
+//       //      544: {
+//       //          items: 1,
+//       //          margin: -250
+//       //      },
+//       //      670: {
+//       //          items: 2,
+//       //          margin: -100
+//       //      },
+//       //      830: {
+//       //          items: 3,
+//       //          margin: 2
 
-      //      }
-      //  }
-   });
-});
+//       //      }
+//       //  }
+//    });
+// });
 
 
 
