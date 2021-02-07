@@ -190,6 +190,7 @@ document.addEventListener('DOMContentLoaded', function(){
 //    const pricesSlider = $("#portfolioSlider");
 //    pricesSlider.owlCarousel({
 //        items: 1,
+//        items: 8,
 //        loop: true, // зацикливание
 //        dots: true,
 //        // margin: -100,
