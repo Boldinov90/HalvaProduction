@@ -17,7 +17,8 @@
   max-width: 1920px;
   min-width: 320px;
   margin: 0 auto;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .no-scroll {
@@ -353,6 +354,7 @@
   height: 80px;
   position: fixed;
   z-index: 100;
+  display: -ms-grid;
   display: grid;
 }
 
@@ -1349,10 +1351,7 @@
 
 .portfolio .portfolio-img-container {
   margin-top: 45px;
-<<<<<<< HEAD
   display: -ms-grid;
-=======
->>>>>>> e1e6e33297bbb23b171e28512fbaea14355181ca
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1360,12 +1359,8 @@
 
 @media screen and (max-width: 500px) {
   .portfolio .portfolio-img-container {
-<<<<<<< HEAD
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-=======
-    grid-template-columns: 1fr 1fr;
->>>>>>> e1e6e33297bbb23b171e28512fbaea14355181ca
   }
 }
 
