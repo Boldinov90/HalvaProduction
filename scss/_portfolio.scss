@@ -22,8 +22,19 @@
         @media screen and (max-width: 500px){
             grid-template-columns: 1fr 1fr;
          }
-        img{
+
+        .portfolio-item{
+            // width: 360px;
+            height: 360px;
             width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                // width: 100%;
+                height: 100%;
+            }
         }
     }
     // .portfolio-slider-wrapper{

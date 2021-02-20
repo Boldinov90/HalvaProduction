@@ -1364,8 +1364,23 @@
   }
 }
 
-.portfolio .portfolio-img-container img {
+.portfolio .portfolio-img-container .portfolio-item {
+  height: 360px;
   width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio .portfolio-img-container .portfolio-item img {
+  height: 100%;
 }
 
 .howWeWork {
